@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+
+		<title>Night in the Woods Parallax</title>
+
+		<link type="text/css" rel="stylesheet" href="styles.css">
+
+		<link href="https://fonts.googleapis.com/css?family=Rammetto+One" rel="stylesheet">
+
+		<link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
+
+		<script src="jquery-3.2.0.min.js"></script>
+
+		<script src="jquery.parallax.js"></script>
+
+		<script>			
+
+			$(function() {
+				$('#scene').parallax({
+					calibrateX: true,
+					calibrateY: true,
+					invertX: false,
+					invertY: false,
+					limitX: 0,
+					limitY: false,
+					scalarX: 2,
+					scalarY: 8,
+					frictionX: 0.2,
+					frictionY: 0.8,
+					originX: 0.5,
+					originY: 0.5
+				});
+			});
+
+		</script>
+
+	</head>
+
+	<body data-0="background-color: rgb(237,242,187);" data-500="background-color: rgb(239,90,37);" height:initial !important>
+
+		<img class="arrow" src="img/arrow.png">
+
+		<ul id="scene">
+		  <li class="layer" data-depth="0.00"><img src="img/city_background.png"></li>
+		  <li class="layer" data-depth="0.20"><img src="img/hill2.png"></li>
+		  <li class="layer" data-depth="0.40"><img src="img/hill1.png"></li>
+		  <li class="layer" data-depth="0.60"><img src="img/trees1.png"></li>
+		  <li class="layer" data-depth="0.80"><img src="img/trees2.png"></li>
+		  <li class="layer" data-depth="1.00"><img src="img/trees3.png"></li>
+		</ul>
+
+		<div class="content">
+			
+			<h2 data-1000="opacity: 1;" data-1300="opacity: 0;">Welcome to</h2>
+		    <h1 data-1000="opacity: 1;" data-1300="opacity: 0;">Possum Springs!</h1>
+		    <h3 data-1000="opacity: 1;" data-1300="opacity: 0;">more like<br>
+				<span style="display: inline-block; width: 40px;"></span>"Awesome" Springs
+    		</h3>
+    		
+			<div class="history">
+				<h4 data-1400='opacity: 0;' data-2000='opacity: 1;'> Founding of Possum Springs</h4>
+
+				<p style="position: relative;" data-1400="left:200%;" data-2000="left:0%;">
+					In the year 1793, two fur trappers by the names of John and Steven, parched from their journey, and carrying 300 beaver pelts, saw an enormous tree with a spring beside it within a deep hollow. An old woman approached them and asked for but a crust of bread. The two brothers, disgusted by her and her appearance, refused. The woman became frustrated with the brothers, with them not even offering her one of their 300 beaver pelts to warm her. She said she would curse them and they would die, that night.
+
+					The old woman had cursed the spring. John lie lifeless on the ground, and Steven feared for his life. Having also drinken of the spring, Steven also perished. The brothers came back as spirits, cursed to never leave the spring. The God of the Forest appeared to the witch, and banished her to wander the night, seeing as she had tarried at the springs too long.
+
+					Possum Springs was founded, and with the beaver population being greatly declined, their biggest exports became corn and pumpkin. Harfest was created to celebrate the founding of Possum Springs.
+				</p>
+
+				<a  href="http://nightinthewoods.gamepedia.com/Possum_Springs">Source</a>
+			
+				<div class="video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/u17kM8oSz3k" frameborder="0" allowfullscreen></iframe></div>
+
+				<h4 data-3400='opacity: 0;' data-3900='opacity: 1;'>Night in the Woods</h4>
+
+				<p style="position: relative;" data-3400="right:200%;" data-3900="right:0%;">
+					College dropout Mae Borowski returns home to the crumbling former mining town of Possum Springs seeking to resume her aimless former life and reconnect with the friends she left behind. But things aren't the same. Home seems different now and her friends have grown and changed. Leaves are falling and the wind is growing colder. Strange things are happening as the light fades.
+				</p>
+
+				<p style="position: relative" data-3400="right:200%;" data-3900="right:0%;" class="last">And there's something in the woods.</p>
+
+				<a href="http://www.nightinthewoods.com/">Source</a>
+			</div>
+
+	  	</div>
+
+  		<div class="bonfire">
+  			
+  		</div>
+
+  		<footer data-3900="opacity: 0;" data-4300="opacity: 1;">
+  			<p>Austin DeClerck</p>
+  		</footer>
+
+		<script type="text/javascript" src="skrollr.min.js"></script>
+		<script type="text/javascript">
+		var s = skrollr.init();
+		</script>
+		
+	</body>
+</html>
+
